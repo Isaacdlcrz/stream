@@ -208,3 +208,5 @@ sns.histplot(data = datos_df[histo_selected])
 ax1.set_title('Histograma de Valores')
 ax1.set_xlabel(histo_selected)
 ax1.set_ylabel('Frecuencia')
+colum_izq.pyplot(fig1)
+
