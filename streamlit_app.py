@@ -197,13 +197,13 @@ st.dataframe(datos_ganancias_df)
 st.subheader('Ganancias')
 
 #Inicialización del gráfico
-fig1, ax1 = plt.subplots()
+fig_ganancias, ax_ganancias = plt.subplots()
 
 #Generación del gráfico
 sns.set(style = "darkgrid")
-sns.histplot(data = datos_ganancias_df['Sucursal'])
-ax1.set_title('Histograma de Valores')
-ax1.set_xlabel('Ciudad')
-ax1.set_ylabel('Frecuencia')
-st.pyplot(fig1)
+sns.histplot(data = datos_ganancias_df['Ciudad'])
+ax_ganancias.set_title('Histograma de Valores')
+ax_ganancias.set_xlabel('Ciudad')
+ax_ganancias.set_ylabel('Ganancias')
+st.pyplot(fig_ganancias)
 
