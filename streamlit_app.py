@@ -193,11 +193,8 @@ st.divider()
 datos_ganancias_df = pd.read_csv('./Datos/Ganancias_id.csv')
 st.dataframe(datos_ganancias_df)
 
-#Definición de las columnas
-colum_izq, colum_der = st.columns(2)
-
 #Título para el gráfico
-colum_izq.subheader('Histograma')
+st.subheader('Ganancias')
 
 #Inicialización del gráfico
 fig1, ax1 = plt.subplots()
