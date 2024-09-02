@@ -188,3 +188,7 @@ sns.heatmap(df_corr, annot = anotacion, fmt='.2f', cmap = color_selected)
 #Renderización del gráfico
 st.pyplot(fig3)
 st.divider()
+
+# Tarea
+datos_ganancias_df = pd.read_csv('./Datos/Ganancias_id.csv')
+st.dataframe(datos_ganancias_df)
