@@ -192,3 +192,19 @@ st.divider()
 # Tarea
 datos_ganancias_df = pd.read_csv('./Datos/Ganancias_id.csv')
 st.dataframe(datos_ganancias_df)
+
+#Definición de las columnas
+colum_izq, colum_der = st.columns(2)
+
+#Título para el gráfico
+colum_izq.subheader('Histograma')
+
+#Inicialización del gráfico
+fig1, ax1 = plt.subplots()
+
+#Generación del gráfico
+sns.set(style = "darkgrid")
+sns.histplot(data = datos_df[histo_selected])
+ax1.set_title('Histograma de Valores')
+ax1.set_xlabel(histo_selected)
+ax1.set_ylabel('Frecuencia')
