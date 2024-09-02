@@ -201,7 +201,7 @@ fig_ganancias, ax_ganancias = plt.subplots()
 
 #Generación del gráfico
 sns.set(style = "darkgrid")
-sns.histplot(data = datos_ganancias_df['Ciudad'])
+sns.barplot(data = datos_ganancias_df, x = 'Ciudad', y = 'Ganancia')
 ax_ganancias.set_title('Histograma de Valores')
 ax_ganancias.set_xlabel('Ciudad')
 ax_ganancias.set_ylabel('Ganancias')
