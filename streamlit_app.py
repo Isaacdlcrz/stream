@@ -57,6 +57,8 @@ default_pers = vars_per.index('Iñaki González')
 ganan_selected = st.sidebar.selectbox('Elección de Persona para Mostrar las Ganancias Personales:', vars_per, index = default_pers)
 st.sidebar.divider()
 
+
+
 #----- GRÁFICO DE CORRELACIÓN DE LOS MESES ------------------------
 #----- Selector del Mapa de Color ---------------------------------
 vars_cmap = ['viridis', 'plasma', 'inferno', 'magma', 'cividis', 'Greys', 'Purples', 'Blues', 'Greens', 'Oranges',
@@ -103,7 +105,8 @@ st.markdown(":violet[El **DataFrame** es el siguiente:]")
 st.dataframe(datos_df)
 st.divider()
 
-
+st.markdown("[# Nombre]")
+st.markdown(ganan_selected)
 #------------------------------------------------------------------
 #----- Configuración de los Elementos del Panel Central -----------
 #------------------------------------------------------------------
