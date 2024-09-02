@@ -203,7 +203,7 @@ fig1, ax1 = plt.subplots()
 sns.set(style = "darkgrid")
 sns.histplot(data = datos_ganancias_df)
 ax1.set_title('Histograma de Valores')
-ax1.set_xlabel(histo_selected)
+ax1.set_xlabel('Ciudad')
 ax1.set_ylabel('Frecuencia')
 st.pyplot(fig1)
 
